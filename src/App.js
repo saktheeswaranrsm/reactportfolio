@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+
 import ProfileSection from './components/ProfileSection';
 import About from './components/About';
 import Skills from './components/Skills';
@@ -12,8 +12,6 @@ function App() {
   return (
     <Router>
       <div className="App min-h-screen bg-white text-gray-900">
-        {/* Navbar */}
-        <Navbar />
 
         {/* Main Content */}
         <main>
