@@ -4,7 +4,7 @@ import { CodeIcon, ShieldIcon, TargetIcon, TrendingUpIcon } from 'lucide-react';
 const AboutCard = ({ icon: Icon, title, description }) => {
   return (
     <div className="p-8 bg-white/70 rounded-xl text-center transition-all duration-300 hover:shadow-lg hover:transform hover:-translate-y-2 border border-gray-100">
-      <div className="flex justify-center mb-4">
+      <div className="flex justify-center mb-4"> 
         {Icon && <Icon className="w-12 h-12 text-black mb-4" />}
       </div>
       <h3 className="text-2xl font-semibold mb-4 text-gray-800">{title}</h3>

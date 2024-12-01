@@ -1,72 +1,41 @@
-import React, { useState } from 'react';
 
-function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+import React from 'react';
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add form submission logic
-    console.log('Form submitted:', formData);
-  };
-
+const ContactSection = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">Contact Me</h1>
-      <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
-        <div className="mb-4">
-          <label className="block mb-2">Name</label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            className="w-full px-3 py-2 border rounded-lg"
-            required
-          />
+    <section className="contact-section container mx-auto px-4 py-16">
+      <h2 className="text-4xl font-bold text-center mb-8">Contact Me...</h2>
+      <div className="max-w-2xl mx-auto text-center">
+        <p className="text-gray-600 mb-4">
+          My inbox is always open. 
+          Whether you have a question or just want to say hi, I'll do my best to get back to you!
+        </p>
+        <div className="contact-details space-y-4">
+          <p>
+            <strong className="text-black">Email:</strong> 
+            <span> saktheeswaranrsm@gmail.com</span>
+          </p>
+          <p>
+            <strong className="text-black">Phone:</strong> 
+            <span> +91 9566354449</span>
+          </p>
+          <p>
+            <strong className="text-black">Location:</strong> 
+            <span> chennai, India </span>
+          </p>
         </div>
-        <div className="mb-4">
-          <label className="block mb-2">Email</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full px-3 py-2 border rounded-lg"
-            required
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block mb-2">Message</label>
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            className="w-full px-3 py-2 border rounded-lg"
-            rows="4"
-            required
-          ></textarea>
-        </div>
-        <button
-          type="submit"
-          className="bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition"
-        >
-          Send Message
-        </button>
-      </form>
-    </div>
-  );
-}
+        <div className="mt-8">
+          <a 
+            href="mailto: saktheeswaranrsm@gmail.com"
+            className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition duration-300"
 
-export default Contact;
+          >
+            Send a Message
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ContactSection
