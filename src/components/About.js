@@ -12,8 +12,9 @@ const AboutCard = ({ icon: Icon, title, description }) => {
     </div>
   );
 };
+     
+const AboutSection = () => {   
 
-const AboutSection = () => {
   const aboutCards = [
     {
       icon: CodeIcon,
