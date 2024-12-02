@@ -8,9 +8,8 @@ const SkillsList = () => {
       'HTML5/CSS3'
     ],
     'Frameworks & Libraries': [
-      'React.js', 
-      'Django', 
-      'Tailwind CSS'
+      'Ember.js', 
+      'Django'
     ],
     'Tools & Technologies': [
       'Git', 
@@ -19,14 +18,13 @@ const SkillsList = () => {
     ],
     'Specialized Skills': [
       'Ethical Hacking',
-      'Web Security',
-      'API Development'
+      'Web Security'
     ]
   };
 
   return (
     <section className="container mx-auto px-4 py-16">
-      <h2 className="text-4xl font-bold text-center mb-12">Technical Skills</h2>
+      <h2 className="text-4xl font-bold text-center mb-12">Technical Skills...</h2>
       
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {Object.entries(technicalSkills).map(([category, skills]) => (
