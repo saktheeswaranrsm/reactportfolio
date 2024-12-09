@@ -15,6 +15,12 @@ function Projects() {
       description: 'Full-stack web application for taxi booking services',
       technologies: ['Django', 'React', 'PostgreSQL'],
       fullDescription: 'A comprehensive taxi booking platform that enables users to book rides, track vehicle location, and manage their transportation needs with real-time updates. The application features a robust backend with Django, a responsive React frontend, and seamless integration with PostgreSQL for efficient data management and user experience.'
+    },
+      {
+      title: 'Dr. Soul Spark',
+      description: 'Emotion-based quote generator for mental health support',
+      technologies: ['Python', 'DeepFace', 'OpenCV', 'React'],
+      fullDescription: 'Dr. Soul Spark is a project designed to help individuals cope with depression by detecting emotions using facial recognition and providing uplifting, contextually relevant quotes. The application integrates DeepFace for facial emotion recognition, Python for backend logic, and React for an engaging user interface. It emphasizes personalization, ease of use, and broad accessibility.'
     }
   ];
 
